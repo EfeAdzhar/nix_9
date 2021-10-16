@@ -1,6 +1,6 @@
 package ua.com.alevel;
 import java.util.Scanner;
-public class EndOfALesson {
+public class EndOfALesson{
     public static void main(String[] args) {
         EndOfALesson endOfALesson = new EndOfALesson();
 
