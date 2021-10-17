@@ -19,7 +19,6 @@ public class BaseOperations2 {
         int counter = 1;
         String letters = "";
         Map<Character, Integer> treeMap = new TreeMap<Character, Integer>();
-
         for (int i = 0; i < inputString.length(); i++) {
             char characters = inputString.charAt(i);
             if (Character.isAlphabetic(characters)) {

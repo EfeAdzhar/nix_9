@@ -31,7 +31,7 @@ public class MainMenu {
                     System.out.println("There's no similar options");
             }
         } catch (InputMismatchException | IOException ime) {
-            System.out.println("Wrong input or no similar options.");
+            System.out.println("Wrong input or no similar options!");
         }
     }
 }

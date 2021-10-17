@@ -7,7 +7,7 @@ public class BaseOperations1 {
         System.out.println(
         "A program that takes a string\n" +
         "and extracts all the numbers\n" +
-        "and finds their sum\n");
+        "and finds their sum.\n");
         System.out.println("Enter your string:");
         line = scanner.nextLine();
         System.out.println("Your output: " + findSum(line));
