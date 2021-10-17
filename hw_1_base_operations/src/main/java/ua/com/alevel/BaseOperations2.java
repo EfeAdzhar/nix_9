@@ -4,15 +4,17 @@ import java.util.TreeMap;
 import java.util.Scanner;
 
 public class BaseOperations2 {
-    public static void main(String[] args) {
+    public void outputChar(String line) {
         Scanner scanner = new Scanner(System.in);
-        String line = "";
+        System.out.println("A program that takes a string\n" +
+            "and extracts all Latin/Cyrillic characters\n" +
+            "and sorts them. Specifying the number of\n" +
+            "occurrences of each character\n");
         System.out.println("Enter a string:");
         line = scanner.nextLine();
         System.out.println("Your output:");
         findChar(line);
     }
-
     static void findChar(String inputString) {
         int counter = 1;
         String letters = "";
