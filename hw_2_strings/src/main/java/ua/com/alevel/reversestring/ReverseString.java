@@ -1,4 +1,4 @@
 package ua.com.alevel.reversestring;
 
-public class StringMain {
+public class ReverseString {
 }
