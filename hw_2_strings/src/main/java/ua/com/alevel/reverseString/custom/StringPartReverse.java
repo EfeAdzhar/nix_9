@@ -4,22 +4,25 @@ import java.io.InputStreamReader;
 import java.util.InputMismatchException;
 import java.io.IOException;
 
-public class SimpleStringReverse {
-    public void simpleReverse(String string) throws IOException, InputMismatchException {
+public class StringPartReverse {
+    public static void partReverse(String string, String part) throws IOException, InputMismatchException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        StringBuffer reversedString = new StringBuffer();
+        String reversedString = "";
         System.out.println("Enter a string:");
         string = bufferedReader.readLine();
+        System.out.println("Enter a part:");
+        part = bufferedReader.readLine();
         while (true) {
             try {
-                for (int i = string.length() - 1; i >= 0; i--) {
-                    reversedString.append(string.charAt(i));
+                for (int i = part.length() - 1; i >= 0; i--) {
+                    reversedString += part.charAt(i);
                 }
                 break;
             } catch (InputMismatchException ime) {
                 ime.printStackTrace();
             }
         }
-        System.out.println("Reversed String: " + reversedString);
+        System.out.println("Reversed part: " + string.replaceAll(part, reversedString));
     }
 }
+
