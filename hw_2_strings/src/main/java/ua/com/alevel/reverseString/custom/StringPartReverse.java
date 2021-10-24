@@ -7,7 +7,7 @@ import java.io.IOException;
 public class StringPartReverse {
     public static void partReverse(String string, String part) throws IOException, InputMismatchException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String reversedString = "";
+        String reverseString = "";
         System.out.println("Enter a string:");
         string = bufferedReader.readLine();
         System.out.println("Enter a part:");
@@ -15,14 +15,14 @@ public class StringPartReverse {
         while (true) {
             try {
                 for (int i = part.length() - 1; i >= 0; i--) {
-                    reversedString += part.charAt(i);
+                    reverseString += part.charAt(i);
                 }
                 break;
             } catch (InputMismatchException ime) {
                 ime.printStackTrace();
             }
         }
-        System.out.println("Reversed part: " + string.replaceAll(part, reversedString));
+        System.out.println("Reversed part: " + string.replaceAll(part, reverseString));
     }
 }
 
