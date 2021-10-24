@@ -1,4 +1,4 @@
-package ua.com.alevel.reversestring;
+package ua.com.alevel.reverseString.custom;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.InputMismatchException;
@@ -13,7 +13,7 @@ public class SimpleStringReverse {
         while (true) {
             try {
                 for (int i = string.length() - 1; i >= 0; i--) {
-                   reversedString.append(string.charAt(i));
+                    reversedString.append(string.charAt(i));
                 }
                 break;
             } catch (InputMismatchException ime) {

@@ -1,6 +1,5 @@
 package ua.com.alevel;
-
-import ua.com.alevel.reversestring.SimpleStringReverse;
+import ua.com.alevel.reverseString.custom.SimpleStringReverse;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -19,8 +18,11 @@ public class StringMain {
                     SimpleStringReverse simpleStringReverse = new SimpleStringReverse();
                     simpleStringReverse.simpleReverse(inputLine);
                     break;
+                case 2 :
+
                 default:
                     System.out.println("There's no similar options");
+
 
             }
         } catch (InputMismatchException | IOException ime) {
