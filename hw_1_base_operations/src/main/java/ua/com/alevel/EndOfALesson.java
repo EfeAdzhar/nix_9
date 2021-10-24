@@ -1,7 +1,9 @@
 package ua.com.alevel;
+
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
 public class EndOfALesson {
     public void lessonEndCounter(int integer) throws IOException, InputMismatchException {
         Scanner scanner = new Scanner(System.in);

@@ -1,7 +1,9 @@
 package ua.com.alevel;
+
 import java.util.Scanner;
 
 public class BaseOperations1 {
+
     public void outputSum(String line) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(
@@ -12,6 +14,7 @@ public class BaseOperations1 {
         line = scanner.nextLine();
         System.out.println("Your output: " + findSum(line));
     }
+
     public static int findSum(String str) {
         String temp = "0";
         int sum = 0;
