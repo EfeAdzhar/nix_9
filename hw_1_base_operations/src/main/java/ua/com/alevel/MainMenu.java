@@ -1,9 +1,11 @@
 package ua.com.alevel;
+
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MainMenu {
+
     public static void main(String[] args) throws InputMismatchException {
         try {
         String inputLine = "";

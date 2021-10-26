@@ -1,9 +1,11 @@
 package ua.com.alevel;
+
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.Scanner;
 
 public class BaseOperations2 {
+
     public void outputChar(String line) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("A program that takes a string\n" +

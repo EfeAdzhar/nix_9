@@ -1,4 +1,5 @@
 package ua.com.alevel;
+
 import ua.com.alevel.reverseString.custom.ReverseByIndex;
 import ua.com.alevel.reverseString.custom.SimpleStringReverse;
 import ua.com.alevel.reverseString.custom.StringPartReverse;
@@ -7,6 +8,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class StringMain {
+
     public static void main(String[] args) throws InputMismatchException {
         System.out.println("1. Simple Reverse.");
         System.out.println("2. Part Reverse.");

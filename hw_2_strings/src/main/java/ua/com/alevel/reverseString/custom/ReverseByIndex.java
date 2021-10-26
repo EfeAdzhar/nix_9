@@ -1,4 +1,5 @@
 package ua.com.alevel.reverseString.custom;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.InputMismatchException;
@@ -6,6 +7,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class ReverseByIndex {
+
     public void reverseByIndexMethod(String string, int firstIndex, int lastIndex) throws IOException, InputMismatchException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         Scanner scanner = new Scanner(System.in);

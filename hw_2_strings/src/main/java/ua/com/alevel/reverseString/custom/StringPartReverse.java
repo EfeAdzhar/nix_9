@@ -1,10 +1,12 @@
 package ua.com.alevel.reverseString.custom;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.InputMismatchException;
 import java.io.IOException;
 
 public class StringPartReverse {
+
     public static void partReverse(String string, String part) throws IOException, InputMismatchException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String reverseString = "";
