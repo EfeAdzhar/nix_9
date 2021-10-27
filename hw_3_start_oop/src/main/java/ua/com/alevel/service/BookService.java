@@ -8,26 +8,26 @@ public class BookService {
     private final BookDao bookDao = new BookDao();
 
     public void create(Book book) {
-        BookDB.getInstance().create(book);
+        bookDao.create(book);
     }
 
     public void update(Book book) {
-        BookDB.getInstance().update(book);
+        bookDao.update(book);
     }
 
     public void delete(int id) {
-        BookDB.getInstance().delete(id);
+        bookDao.delete(id);
+    }
+
+    public Book findById(int id) {
+        return bookDao.findById(id);
+    }
+
+    public Book[] findAll() {
+        return bookDao.findAll();
     }
 
     public static int sizeOf() {
         return BookDB.sizeOf();
-    }
-
-    public Book findById(int id) {
-        return BookDB.getInstance().findById(id);
-    }
-
-    public Book[] findAll() {
-        return BookDB.getInstance().findAll();
     }
 }
