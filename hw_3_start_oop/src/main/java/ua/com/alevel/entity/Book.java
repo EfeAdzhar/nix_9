@@ -3,7 +3,6 @@ package ua.com.alevel.entity;
 public class Book {
     private int id;
     private String BookTitle;
-    private String BookAuthor;
     private int price;
 
     public int getId() {
@@ -22,14 +21,6 @@ public class Book {
         BookTitle = bookTitle;
     }
 
-    public String getBookAuthor() {
-        return BookAuthor;
-    }
-
-    public void setBookAuthor(String bookAuthor) {
-        BookAuthor = bookAuthor;
-    }
-
     public int getPrice() {
         return price;
     }
@@ -43,7 +34,6 @@ public class Book {
         return "Book{" +
                 "id=" + id +
                 ", BookTitle='" + BookTitle + '\'' +
-                ", BookAuthor='" + BookAuthor + '\'' +
                 ", price=" + price +
                 '}';
     }
