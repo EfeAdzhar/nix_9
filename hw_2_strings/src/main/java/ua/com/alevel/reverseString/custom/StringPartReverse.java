@@ -27,4 +27,3 @@ public class StringPartReverse {
         System.out.println("Reversed part: " + string.replaceAll(part, reverseString));
     }
 }
-
