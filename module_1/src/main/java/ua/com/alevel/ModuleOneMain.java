@@ -1,5 +1,6 @@
 package ua.com.alevel;
 
+import ua.com.alevel.level1.Chess;
 import ua.com.alevel.level1.UniqueNumber;
 
 import java.io.BufferedReader;
@@ -38,6 +39,11 @@ public class ModuleOneMain {
             switch (menu) {
                 case "1": {
                     UniqueNumber.uniqueNumber();
+                    menu = "";
+                    break;
+                }
+                case "2": {
+                    Chess.horseMove();
                     menu = "";
                     break;
                 }
