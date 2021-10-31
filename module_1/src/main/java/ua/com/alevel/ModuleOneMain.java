@@ -1,5 +1,6 @@
 package ua.com.alevel;
 
+import ua.com.alevel.level1.AreaOfTriangle;
 import ua.com.alevel.level1.Chess;
 import ua.com.alevel.level1.UniqueNumber;
 
@@ -44,6 +45,11 @@ public class ModuleOneMain {
                 }
                 case "2": {
                     Chess.horseMove();
+                    menu = "";
+                    break;
+                }
+                case "3": {
+                    AreaOfTriangle.findTriangleAreaByThreePoints();
                     menu = "";
                     break;
                 }
