@@ -5,6 +5,7 @@ import ua.com.alevel.db.BookDB;
 import ua.com.alevel.entity.Book;
 
 public class BookService {
+
     private final BookDao bookDao = new BookDao();
 
     public void create(Book book) {

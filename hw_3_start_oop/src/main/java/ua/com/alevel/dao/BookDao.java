@@ -1,8 +1,10 @@
 package ua.com.alevel.dao;
-import ua.com.alevel.entity.Book;
+
 import ua.com.alevel.db.BookDB;
+import ua.com.alevel.entity.Book;
 
 public class BookDao {
+
     public void create(Book book) {
         BookDB.getInstance().create(book);
     }

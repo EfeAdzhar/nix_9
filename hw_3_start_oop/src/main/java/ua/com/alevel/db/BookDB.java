@@ -1,7 +1,9 @@
 package ua.com.alevel.db;
+
 import ua.com.alevel.entity.Book;
 
 public class BookDB {
+
     private final Book[] books;
     private static BookDB instance;
     private static int newBookId = 0;
@@ -20,7 +22,7 @@ public class BookDB {
     public void create(Book book) {
         book.setId(newBookId);
         books[newBookId] = book;
-        newBookId++;
+        newBookId++; // ну что же ты ... нельзя индекс использовать в качестве айдишника
     }
 
     public void update(Book book) {
