@@ -1,36 +1,38 @@
 package ua.com.alevel.level2;
 
 import java.util.Stack;
+import java.util.Scanner;
 
 public class Brackets {
-    public static boolean isValid(String s) {
-
-        Stack<Character> c = new Stack<>();
-        int n = s.length();
+    public static boolean isValid(String string) {
+        Scanner scanner = new Scanner(System.in);
+        Stack<Character> charactersStack = new Stack<>();
+        System.out.println("Enter String: ");
+        string = scanner.nextLine();
+        int length = string.length();
         boolean bool = false;
-        if (s.isEmpty() | s == null) {
+        if (string.isEmpty() | string == null) {
             return true;
         }
 
-        for (int i=0 ; i<n ; i++) {
-            if (s.charAt(i) == '{') {
-                c.push('{');
-            } else if (s.charAt(i) == '[') {
-                c.push('[');
-            } else if (s.charAt(i) == '(') {
-                c.push('(');
-
-            } else if (!c.isEmpty() && c.peek() == '{') {
-                c.pop();
-            } else if (!c.isEmpty() && c.peek() == '[') {
-                c.pop();
-            } else if (!c.isEmpty() && c.peek() == '(') {
-                c.pop();
+        for (int i = 0; i < length; i++) {
+            if (string.charAt(i) == '{') {
+                charactersStack.push('{');
+            } else if (string.charAt(i) == '[') {
+                charactersStack.push('[');
+            } else if (string.charAt(i) == '(') {
+                charactersStack.push('(');
+            } else if (!charactersStack.isEmpty() && charactersStack.peek() == '{') {
+                charactersStack.pop();
+            } else if (!charactersStack.isEmpty() && charactersStack.peek() == '[') {
+                charactersStack.pop();
+            } else if (!charactersStack.isEmpty() && charactersStack.peek() == '(') {
+                charactersStack.pop();
             } else {
                 break;
             }
         }
-        if (c.isEmpty()) {
+        if (charactersStack.isEmpty()) {
             return true;
         } else {
             return false;

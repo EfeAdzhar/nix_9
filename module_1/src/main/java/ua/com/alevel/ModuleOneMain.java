@@ -3,6 +3,7 @@ package ua.com.alevel;
 import ua.com.alevel.level1.AreaOfTriangle;
 import ua.com.alevel.level1.Chess;
 import ua.com.alevel.level1.UniqueNumber;
+import ua.com.alevel.level2.BinaryTree;
 import ua.com.alevel.level2.Brackets;
 
 import java.io.BufferedReader;
@@ -57,12 +58,13 @@ public class ModuleOneMain {
             }
         } while (!menu.equals("4"));
     }
+
     public static void levelTwo() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String menu;
         do {
-            System.out.println("1. Brackets task.");
-            System.out.println("2. Binary tree task.");
+            System.out.println("1. Brackets.");
+            System.out.println("2. Binary tree.");
             System.out.println("3. Go to main menu.");
             menu = reader.readLine();
             switch (menu) {
@@ -72,10 +74,16 @@ public class ModuleOneMain {
                     break;
                 }
                 case "2": {
-
+                    BinaryTree.run();
+                    menu = "";
+                    break;
                 }
             }
-        } while(!menu.equals("3"));
+        } while (!menu.equals("3"));
     }
 
+    public static void levelThree() throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String menu;
+    }
 }

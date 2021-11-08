@@ -1,4 +1,5 @@
 package ua.com.alevel.level1;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -16,26 +17,26 @@ public class UniqueNumber {
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
-        char [] charArr = new char[string.length()];
+        char[] charArr = new char[string.length()];
         string.getChars(0, string.length(), charArr, 0);
 
-        for(int i = 0; i < string.length(); i++) {
+        for (int i = 0; i < string.length(); i++) {
             if (Character.isDigit(charArr[i])) arrSize++;
         }
-        char [] charNumbersArray = new char[arrSize];
-        for(int i = 0; i < string.length(); i++) {
+        char[] charNumbersArray = new char[arrSize];
+        for (int i = 0; i < string.length(); i++) {
             if (Character.isDigit(charArr[i])) {
-               for (int j = 0; j <= arrIteration; j++) {
-                   if(charNumbersArray[j] == charArr[i]) {
-                       break;
-                   } else {
-                       if (j == arrIteration) {
-                           charNumbersArray[arrIteration] = charArr[i];
-                           arrIteration++;
-                           break;
-                       }
-                   }
-               }
+                for (int j = 0; j <= arrIteration; j++) {
+                    if (charNumbersArray[j] == charArr[i]) {
+                        break;
+                    } else {
+                        if (j == arrIteration) {
+                            charNumbersArray[arrIteration] = charArr[i];
+                            arrIteration++;
+                            break;
+                        }
+                    }
+                }
             }
         }
         System.out.print("Number of unique numbers: " + arrIteration);
