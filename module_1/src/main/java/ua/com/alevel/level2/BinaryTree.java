@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BinaryTree {
+
     public static class Node {
         int value;
         Node left, right;

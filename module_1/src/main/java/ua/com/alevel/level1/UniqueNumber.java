@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class UniqueNumber {
+
     public static void uniqueNumber() {
         String string = "";
         int arrSize = 0;

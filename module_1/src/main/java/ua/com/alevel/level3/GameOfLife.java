@@ -3,6 +3,7 @@ package ua.com.alevel.level3;
 import java.util.Scanner;
 
 public class GameOfLife {
+
     public final static int boardHeight = 20;
     public static Cell[][] board = new Cell[boardHeight][boardHeight];
     public static Cell[][] lastIteration = new Cell[boardHeight][boardHeight];

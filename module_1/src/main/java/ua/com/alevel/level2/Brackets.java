@@ -4,7 +4,8 @@ import java.util.Stack;
 import java.util.Scanner;
 
 public class Brackets {
-    public static boolean isValid(String string) {
+
+    public static void isValid(String string) {
         Scanner scanner = new Scanner(System.in);
         Stack<Character> charactersStack = new Stack<>();
         System.out.println("Enter String: ");
@@ -12,7 +13,7 @@ public class Brackets {
         int length = string.length();
         boolean bool = false;
         if (string.isEmpty() | string == null) {
-            return true;
+            return;
         }
 
         for (int i = 0; i < length; i++) {
@@ -33,9 +34,7 @@ public class Brackets {
             }
         }
         if (charactersStack.isEmpty()) {
-            return true;
         } else {
-            return false;
         }
     }
 }
